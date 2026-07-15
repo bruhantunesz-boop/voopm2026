@@ -1,0 +1,152 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0d2b57,#1c4b87);
+  min-height:100vh;
+  color:#1d2b4f;
+}
+
+.topo{
+  padding:30px 20px;
+}
+
+.painel{
+  max-width:900px;
+  margin:auto;
+  background:#17345f;
+  color:#fff;
+  border-radius:18px;
+  display:flex;
+  justify-content:space-around;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.painel-item{
+  text-align:center;
+}
+
+.painel-item span{
+  display:block;
+  font-size:13px;
+  opacity:.8;
+}
+
+.painel-item strong{
+  font-size:22px;
+}
+
+.verde{
+  color:#62ff93;
+}
+
+.container{
+  max-width:900px;
+  margin:30px auto;
+  background:#fff;
+  border-radius:28px;
+  padding:45px;
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.pesquisa{
+  text-align:center;
+}
+
+.pesquisa h1{
+  font-size:42px;
+  color:#17345f;
+}
+
+.pesquisa h2{
+  margin:10px 0 20px;
+  font-size:34px;
+}
+
+.pesquisa p{
+  color:#666;
+  margin-bottom:30px;
+  line-height:1.6;
+}
+
+#pesquisa{
+  width:100%;
+  padding:18px;
+  border:2px solid #ddd;
+  border-radius:14px;
+  font-size:18px;
+  transition:.3s;
+}
+
+#pesquisa:focus{
+  outline:none;
+  border-color:#ff7a00;
+  box-shadow:0 0 0 4px rgba(255,122,0,.15);
+}
+
+#lista{
+  margin-top:25px;
+}
+
+.item{
+  padding:14px 18px;
+  border-bottom:1px solid #ececec;
+  cursor:pointer;
+}
+
+.item:hover{
+  background:#f5f8ff;
+}
+
+.cartao{
+  display:none;
+  margin-top:40px;
+  background:#f7f9fc;
+  border-left:8px solid #ff7a00;
+  border-radius:18px;
+  padding:30px;
+  animation:aparece .5s ease;
+}
+
+.cartao h3{
+  color:#17345f;
+  font-size:34px;
+  margin-bottom:20px;
+}
+
+footer{
+  text-align:center;
+  color:#fff;
+  padding:35px;
+}
+
+@keyframes aparece{
+  from{opacity:0;transform:translateY(25px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+@media(max-width:700px){
+  .painel{
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .container{
+    margin:15px;
+    padding:25px;
+  }
+
+  .pesquisa h1{
+    font-size:30px;
+  }
+
+  .pesquisa h2{
+    font-size:24px;
+  }
+}
